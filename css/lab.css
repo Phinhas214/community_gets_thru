@@ -9,7 +9,8 @@
   margin-right: 200px;border-radius: 25px;
   padding: 20px;
   width: 400px;
-  height: auto; 
+  height: 200px; 
+  font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
   margin-right: 20px;
 }
@@ -38,27 +39,14 @@ margin-right: 20px;
 
 #content{
   background-color: maroon;
+  padding: 20px;
 }
 
 body{
   color:black;
   margin: 0;
-  padding: 20px;
   background-color: maroon;
 }
-
-/* .tabs{
-display: flex;
-justify-content: center;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-margin-top: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
-padding-right: 0px;
-padding-top: 0px;
-} */
 
 .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14,.item15,.item16{
 padding: 10px;
@@ -68,25 +56,36 @@ background-color: #f0e09c;
 }
 
 
+
 #wrapper {
   display: flex;
   flex-direction: row; /* This is the default, but just to be explicit */
 }
+#wrapper > div > .minor-section1:hover, 
+#wrapper > div > .minor-section2:hover,
+#wrapper > div > .minor-section3:hover,
+#wrapper > div > .minor-section4:hover
+{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 
 #column1{
   flex: 1;
-/* display: flex;
-flex-direction: column; */
+  /* width:5em; */
 }
 
 #column2{
   flex: 2;
-/* display: flex; 
-flex-direction: column; */
 }
 
-/* test */
 
 #webtitle{
   text-align: center;
+  padding-block: 0.7em 1em; 
+  writing-mode: horizontal-tb;
+  font-size: 80px;
 }
+
+
+
