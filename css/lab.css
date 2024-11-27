@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.description{
+.description, .credits{
 padding: 10px;
 margin-bottom: 10px;
 border: solid 1px white;
