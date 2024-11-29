@@ -11,7 +11,7 @@
   margin-left: 200px;
   padding: 20px;
   width: 400px;
-  height: 200px; 
+  height: auto; 
   font-size: 20px;
   font-family: 'Courier New', Courier, monospace;
   margin-right: 20px;
@@ -29,31 +29,40 @@
   text-align: center;
   margin: 0;
 }
-
+#webtitle{
+  text-align: center;
+  padding-block: 0.2em 0.5em; 
+  writing-mode: horizontal-tb;
+  font-size: 45px;
+}
 
 .description { 
   border: solid 1px white;
   background-color: white;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   width: 50%;
   height: auto; 
   border: solid 1px white;
   border-radius: 25px;
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
   }
 
-.credits {
+.credits, .participate{
   border: solid 1px white;
   background-color: white;
   margin: auto;
+  margin-bottom:20px;
   width: 50%;
   height: auto; 
-  padding: 10px;
+  padding: 20px;
   border: solid 1px white;
   border-radius: 25px;
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
+
 
 .breaker{
   padding: 10px;
@@ -62,28 +71,21 @@
 
 
 body{
-  background-image: url(../img/community_gets_thru.jpg);
+  background-image: url(../img/community_gets_thru_background_edit.jpg);
   background-size: cover;
   background-size: 100% 100%;
   background-attachment: fixed;
-  /* color:black;
+  color:black;
   margin: 0;
-  background-image: url("../img/lamontandnami.jpg");
   background-color: maroon;
 }
 
-.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11,.item12,.item13,.item14,.item15,.item16{
-padding: 10px;
-margin-bottom: 10px;
-border: solid 1px #f0e09c;
-background-color: #f0e09c;
-} */
 
 
-
-#wrapper {
+#wrapper{
   display: flex;
   flex-direction: row; /* This is the default, but just to be explicit */
+  padding-left: 10em;
 }
 #wrapper > div > .minor-section1:hover, 
 #wrapper > div > .minor-section2:hover,
@@ -96,20 +98,32 @@ background-color: #f0e09c;
 
 #column1{
   flex: 1;
+  justify-content: center;
+  align-items: center;
   /* width:5em; */
 }
 
 #column2{
   flex: 2;
-}
-
-
-#webtitle{
-  text-align: center;
-  padding-block: 0.7em 1em; 
-  writing-mode: horizontal-tb;
-  font-size: 80px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
+/* Photos */
+#originalver{
+  width: 400px;
+}
+
+#copyright{
+  padding-left:auto
+}
+
+#var{
+  width: 400px;
+}
+
+#groupphoto{
+  width: 400px;
+}
