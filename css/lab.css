@@ -36,7 +36,7 @@
   font-size: 45px;
 }
 
-.description { 
+.description, .communitydef, .event{ 
   border: solid 1px white;
   background-color: white;
   margin: auto;
@@ -49,7 +49,11 @@
   text-align: center;
   }
 
-.credits, .participate{
+  .communitydef, .event{
+    margin-top: 20px;
+  }
+
+.credits, .participate, .questions{
   border: solid 1px white;
   background-color: white;
   margin: auto;
